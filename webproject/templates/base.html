@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebProject Django</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'vendor/css/bootstrap.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'vendor/css/font-awesome.min.css' %}" />
+
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="{% static 'vendor/js/jquery.min.js' %}"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="{% static 'vendor/js/bootstrap.min.js' %}"></script>
+        <!-- Main JS -->
+        {# <script src="{% static 'base/js/main.js' %}"></script>#}
+    </head>
+
+    <body>
+      <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand brand-custom" href="/">
+                  <span>WPD</span>
+                  Home
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div>
+    {% block content %}{% endblock content %}
+    </div>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col ">
+                        <h3>Django Webproject</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="https://github.com/cholox/django-web-project" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
