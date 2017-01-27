@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+        <div>
+          <table class="table table-striped">
+            <thead>
+              <td>
+                Name
+              </td>
+              <td>
+                Description
+              </td>
+            </thead>
+            {% for item in items %}
+              <tr>
+                <td>
+                  {{item.name}}
+                </td>
+                <td>
+                  {{item.description}}
+                </td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
+    </div>
+  </div>
+{% endblock content %}

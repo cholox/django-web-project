@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'webproject.apps.base',
+    'webproject.apps.search',
+    'webproject.apps.item',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "webproject/static"),
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
