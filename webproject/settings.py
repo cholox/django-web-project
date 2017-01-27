@@ -25,7 +25,9 @@ SECRET_KEY = '18j(7x9p1i5+j4pr2l(7&72#u$82olqi*j-3wd+qdcv^2o()_='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'cholox.pythonanywhere.com',
+]
 
 
 # Application definition
