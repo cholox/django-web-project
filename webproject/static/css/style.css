@@ -1,0 +1,21 @@
+/**
+* @Date:   2017-01-27T10:15:42+01:00
+* @Email:  choloisaza@outlook.de
+* @Last modified time: 2017-01-27T11:22:34+01:00
+*/
+
+
+body {
+  padding-top: 70px;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.home-img {
+  width: 200px;
+  height: auto;
+}

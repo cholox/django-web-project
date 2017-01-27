@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <h1>{{project_name}}</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+        <img src="{% static 'img/osi_symbol.png' %}" class="img-responsive center-block home-img">
+        <img src="{% static 'img/django-logo-positive.png' %}" class="img-responsive center-block home-img">
+    </div>
+  </div>
+{% endblock content %}
