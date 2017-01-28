@@ -26,6 +26,7 @@ SECRET_KEY = '18j(7x9p1i5+j4pr2l(7&72#u$82olqi*j-3wd+qdcv^2o()_='
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'cholox.pythonanywhere.com',
 ]
 
@@ -126,9 +127,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# run server locally
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "webproject/static"),
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-STATIC_ROOT = os.path.join(BASE_DIR, "webproject/static")
+
+# for pythonanywhere.com only!
+# STATIC_ROOT = os.path.join(BASE_DIR, "webproject/static")

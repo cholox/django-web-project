@@ -1,8 +1,12 @@
 from django.shortcuts import render
+from django.views import generic
 
 from webproject import constants
 
 
-def home(request):
-    context = {"project_name": constants.PROJECT_NAME}
-    return render(request, 'base/home.html', context)
+class HomeView(generic.ListView):
+    template_name = 'base/home.html'
+    context_object_name = 'project_name'
+
+    def get_queryset(self):
+        return constants.PROJECT_NAME

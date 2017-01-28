@@ -4,9 +4,41 @@
 {% block content %}
   <div class="container">
     <div class="row">
-        <div class="text-center">
-          <h1>Search Template</h1>
+        <div class="center-block">
+          <form action="{% url 'search:search' %}" method="get">
+            {% csrf_token %}
+            <input type="text" id="searchbox" name="searchinput" placeholder="Search" autofocus/>
+            <button class="searchbutton" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
         </div>
     </div>
+    {% if item_list %}
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <table class="table table-striped">
+          <thead>
+            <td>
+              Name
+            </td>
+            <td>
+              Description
+            </td>
+          </thead>
+          {% for item in item_list %}
+            <tr>
+              <td>
+                {{item.name}}
+              </td>
+              <td>
+                {{item.description}}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+    {% endif %}
   </div>
 {% endblock content %}

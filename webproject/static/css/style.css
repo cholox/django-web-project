@@ -1,12 +1,12 @@
 /**
 * @Date:   2017-01-27T10:15:42+01:00
 * @Email:  choloisaza@outlook.de
-* @Last modified time: 2017-01-27T11:22:34+01:00
+* @Last modified time: 2017-01-28T11:09:19+01:00
 */
 
 
 body {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 .vcenter {
@@ -17,5 +17,10 @@ body {
 
 .home-img {
   width: 200px;
+  height: auto;
+}
+
+.brand-custom {
+  width: 100px;
   height: auto;
 }
